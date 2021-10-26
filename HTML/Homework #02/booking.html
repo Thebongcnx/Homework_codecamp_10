@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <style>
+        body {
+            margin-left: 50px;
+        }
+        .box {
+            background-color: rgba(0, 0, 0, 0.459);
+            border: 2.5px solid gray;
+            width: 400px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .left {
+            margin-top: 25px;
+            margin-left: 25px;
+        }
+        .right {
+            margin-top: 25px;
+            margin-left: 15px;
+        }
+        .left, .right {
+            width: 50%;
+        }
+        .city, .dt {
+            width: 155px;
+        }
+        .city, .btm {
+            margin-bottom: 20px;
+        }
+        .amt {
+            width: 30px;
+        }
+        .city, .crc {
+            height: 24px;
+        }
+        .btm {
+            width: 80%;
+            display: grid;
+            grid-column: span 2;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        .final {
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h2>BOOKING FORM</h2> 
+    <div class="box">
+        <div>
+            <form class="left">
+                <lable for="departure">Flying from:</lable>
+                <select name="City" class="city">
+                    <option value="none">-Select city-</option>
+                    <option value="CNX">Chiang Mai</option>
+                    <option value="DMK">Don Mueang</option>
+                    <option value="BKK">Suvarnabhumi</option>
+                    <option value="HKT">Phuket</option>
+                    <option value="HDY">Song Kla</option>
+                </select>
+                <label for="dpt-date">Departing:</label>
+                    <input type="date" class="dt" name="Departing">
+            </form><br>
+        </div>
+        <div>
+            <form class="right">
+                <lable for="arrival">To:</lable><br>
+                <select name="City" class="city">
+                    <option value="none">-Select city-</option>
+                    <option value="CNX">Chiang Mai</option>
+                    <option value="DMK">Don Mueang</option>
+                    <option value="BKK">Suvarnabhumi</option>
+                    <option value="HKT">Phuket</option>
+                    <option value="HDY">Song Kla</option>
+                </select>
+                <label for="arv-date">Arriving:</label><br>
+                <input type="date" class="dt" name="Departing">
+            </form>
+        </div>
+        <div  class="btm">
+            <form>
+                <lable for="adult">Adult</lable><br>
+                <input class="amt" type="number" name="adult" min="0" max="99">
+            </form>
+            <form>
+                <lable for="child">Child</lable><br>
+                <input class="amt" type="number" name="child" min="0" max="99">
+            </form>
+            <form>
+                <lable for="infant">Infant</lable><br>
+                <input class="amt" type="number" name="infant" min="0" max="99">
+            </form>
+            <form>
+                <lable for="currency">Currency</lable><br>
+                <select name="currency" class="crc">
+                    <option value="dollar(us)">USD</option>
+                    <option value="dollar(sg)">SGD</option>
+                    <option value="pound">GBP</option>                    
+                    <option value="baht">THB</option>
+                    <option value="yuan">CNY</option>
+                </select>
+            </form>   
+        </div><br>
+        <div class="final">      
+            <input class="button" type="submit" value="Search">      
+        </div>
+    </div>  
+</body>
+</html>
