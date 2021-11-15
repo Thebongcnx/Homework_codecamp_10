@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge CSS 001</title>
+    <style>
+        table {
+            background-color: rgb(255, 255, 255);
+            border: 3px solid gray;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        span {
+            color: red;
+        }
+        p {
+            padding-top: 20px;
+            height: 40px;
+            background-color: lightgray;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form style="background-color:white;">
+            <table>
+                <tr>
+                    <td><label for="name">Name <span>*</span>:</label></td>
+                    <td><input type="text" name="name"><br><td>
+                </tr>
+                <tr>
+                    <td><label for="tabt">Tab Text <span>*</span>:</label></td>
+                    <td><input type="text" name="tab text"></td>
+                </tr>
+                <tr>
+                    <td><label for="url">URL <span>*</span>:</label></td>
+                    <td>http://www.wizehive.com/webform/<input type="text" name="name"><br><td>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                    <p>FORM SETUP</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="forms">Form:</label></td>
+                    <td><select name="form" style="width:170px;">
+                            <option value="fm0"></option>
+                            <option value="fm1">1</option>
+                            <option value="fm2">2</option>
+                            <option value="fm3">3</option>
+                            <option value="fm4">4</option>
+                        </select>
+                        <button type="button">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="logos">Logo:</label></td>
+                    <td><input type="file" name="logo"><button type="button">Upload Logo</button></td>
+                </tr>
+                <tr>
+                    <td><label for="tpt">Template Text:</label></td>
+                    <td><select name="template-t" style="width:170px;">
+                            <option value="ENG">English</option>
+                            <option value="THA">Thai</option>
+                            <option value="CHN">Chinese</option>
+                            <option value="ESP">Spanish</option>
+                        </select>
+                        <button type="button">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Rev-f">Review Form:</label></td>
+                    <td><select name="review-f" style="width:170px;">
+                            <option value="DF">Default</option>
+                            <option value="AA">A</option>
+                            <option value="BB">B</option>
+                            <option value="CC">C</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Rev-s">Review Score:</label></td>
+                    <td><select name="review-s" style="width:170px;">
+                            <option value="0">Rating</option>
+                            <option value="1">Bad</option>
+                            <option value="2">Not bad</option>
+                            <option value="3">Good</option>
+                            <option value="4">Great</option>
+                            <option value="5">Best</option>
+                        </select>
+                        <button type="button">Reload Fields</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="S-type">Scoring Type:</label></td>
+                    <td><select name="scoring-t">
+                            <option value="AVG">Average</option>
+                            <option value="PCT">Percent</option>
+                            <option value="PNT">Point</option>
+                        </select>
+                </tr>
+                <tr>
+                    <td><label for="Max-s">Max Score:</label></td>
+                    <td><input type="text" name="max score" placeholder="4.00"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
